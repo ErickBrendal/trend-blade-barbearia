@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Star, MapPin, Clock, Phone, Instagram, Calendar, Wifi, CreditCard, Car, Heart, PawPrint } from 'lucide-react'
-import logoImage from './assets/IMG_7057.jpeg'; // Importa a nova imagem
+import logoImage from './assets/IMG_7057.jpg'; // Importa a nova imagem
 import './App.css'
 
 function App() {

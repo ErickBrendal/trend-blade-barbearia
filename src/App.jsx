@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Scissors, Star, MapPin, Clock, Phone, Instagram, Calendar, Wifi, CreditCard, Car, Heart, PawPrint } from 'lucide-react'
+import { Star, MapPin, Clock, Phone, Instagram, Calendar, Wifi, CreditCard, Car, Heart, PawPrint } from 'lucide-react'
+import logoImage from './assets/IMG_7057.jpeg'; // Importa a nova imagem
 import './App.css'
 
 function App() {
@@ -58,7 +59,7 @@ function App() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <Scissors className="h-8 w-8 text-yellow-500" />
+              <img src={logoImage} alt="Trend Blade Logo" className="h-8 w-8" /> {/* Substituído aqui */}
               <span className="text-xl font-bold text-yellow-500">Trend Blade</span>
             </div>
             <div className="hidden md:flex space-x-6">
@@ -120,7 +121,7 @@ function App() {
             </div>
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-yellow-500/20 to-transparent border-2 border-yellow-500/30 flex items-center justify-center">
-                <Scissors className="h-32 w-32 text-yellow-500" />
+                <img src={logoImage} alt="Trend Blade Logo" className="h-32 w-32" /> {/* Substituído aqui */}
               </div>
             </div>
           </div>
@@ -275,7 +276,8 @@ function App() {
                   <MapPin className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>
                     <h4 className="font-semibold">Endereço</h4>
-                    <p className="text-gray-300">Av Papa Pio XII, nº 218<br />Guarulhos, São Paulo</p>
+                    <p className="text-gray-300">Av Papa Pio XII, nº 218  
+Guarulhos, São Paulo</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -297,8 +299,10 @@ function App() {
                   <div>
                     <h4 className="font-semibold">Horário de Funcionamento</h4>
                     <p className="text-gray-300">
-                      Segunda a Sexta: 9h às 19h<br />
-                      Sábado: 8h às 17h<br />
+                      Segunda a Sexta: 9h às 19h  
+
+                      Sábado: 8h às 17h  
+
                       Domingo: Fechado
                     </p>
                   </div>
@@ -343,7 +347,7 @@ function App() {
       <footer className="bg-black border-t border-yellow-500/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Scissors className="h-6 w-6 text-yellow-500" />
+            <img src={logoImage} alt="Trend Blade Logo" className="h-6 w-6" /> {/* Substituído aqui */}
             <span className="text-xl font-bold text-yellow-500">Trend Blade Barbearia</span>
           </div>
           <p className="text-gray-400">
@@ -356,4 +360,3 @@ function App() {
 }
 
 export default App
-

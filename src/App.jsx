@@ -59,7 +59,7 @@ function App() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <img src={logoImage} alt="Trend Blade Logo" className="h-8 w-8" /> {/* Substituído aqui */}
+              <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" /> {/* Ajustado aqui */}
               <span className="text-xl font-bold text-yellow-500">Trend Blade</span>
             </div>
             <div className="hidden md:flex space-x-6">
@@ -121,7 +121,7 @@ function App() {
             </div>
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-yellow-500/20 to-transparent border-2 border-yellow-500/30 flex items-center justify-center">
-                <img src={logoImage} alt="Trend Blade Logo" className="h-32 w-32" /> {/* Substituído aqui */}
+                <img src={logoImage} alt="Trend Blade Logo" className="h-48 w-auto object-contain" /> {/* Ajustado aqui */}
               </div>
             </div>
           </div>
@@ -284,7 +284,7 @@ Guarulhos, São Paulo</p>
                   <Phone className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>
                     <h4 className="font-semibold">WhatsApp</h4>
-                    <p className="text-gray-300">(11) 99999-9999</p>
+                    <p className="text-gray-300">(11) 95123-1443</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -299,11 +299,11 @@ Guarulhos, São Paulo</p>
                   <div>
                     <h4 className="font-semibold">Horário de Funcionamento</h4>
                     <p className="text-gray-300">
-                      Segunda a Sexta: 9h às 19h  
+                      Terça a Sexta: 9h às 19h  
 
                       Sábado: 8h às 17h  
 
-                      Domingo: Fechado
+                      Domingo e Segunda: Fechado
                     </p>
                   </div>
                 </div>
@@ -347,7 +347,7 @@ Guarulhos, São Paulo</p>
       <footer className="bg-black border-t border-yellow-500/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <img src={logoImage} alt="Trend Blade Logo" className="h-6 w-6" /> {/* Substituído aqui */}
+            <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" /> {/* Ajustado aqui */}
             <span className="text-xl font-bold text-yellow-500">Trend Blade Barbearia</span>
           </div>
           <p className="text-gray-400">

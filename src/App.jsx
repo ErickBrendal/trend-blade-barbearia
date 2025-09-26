@@ -59,7 +59,7 @@ function App() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" /> {/* Ajustado aqui */}
+              <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" />
               <span className="text-xl font-bold text-yellow-500">Trend Blade</span>
             </div>
             <div className="hidden md:flex space-x-6">
@@ -121,7 +121,7 @@ function App() {
             </div>
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-yellow-500/20 to-transparent border-2 border-yellow-500/30 flex items-center justify-center">
-                <img src={logoImage} alt="Trend Blade Logo" className="h-48 w-auto object-contain" /> {/* Ajustado aqui */}
+                <img src={logoImage} alt="Trend Blade Logo" className="h-48 w-auto object-contain" />
               </div>
             </div>
           </div>
@@ -206,13 +206,15 @@ function App() {
           </div>
           <div className="text-center mt-12">
             <p className="text-gray-400 mb-6">Agende seu horário pelo Booksy ou WhatsApp</p>
-            <Button 
-              size="lg" 
-              className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold"
+            <a 
+              href="https://booksy.com/pt-br/270879_trend-blade-barbearia_barbearias_931546_guarulhos#ba_s=seo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-black rounded-md transition-colors"
             >
               <Calendar className="mr-2 h-5 w-5" />
               Agendar Agora
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -224,7 +226,7 @@ function App() {
             <h3 className="text-2xl font-bold mb-4">Comodidades &amp; <span className="text-yellow-500">Diferenciais</span></h3>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            {amenities.map((amenity, index) => (
+            {amenities.map((amenity, index ) => (
               <div key={index} className="flex items-center space-x-3 text-gray-300">
                 <amenity.icon className="h-6 w-6 text-yellow-500" />
                 <span>{amenity.text}</span>
@@ -284,7 +286,11 @@ Guarulhos, São Paulo</p>
                   <Phone className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>
                     <h4 className="font-semibold">WhatsApp</h4>
-                    <p className="text-gray-300">(11) 95123-1443</p>
+                    <p className="text-gray-300">
+                      <a href="https://wa.me/5511951231443" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition-colors">
+                        (11 ) 95123-1443
+                      </a>
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -299,11 +305,11 @@ Guarulhos, São Paulo</p>
                   <div>
                     <h4 className="font-semibold">Horário de Funcionamento</h4>
                     <p className="text-gray-300">
-                      Terça a Sexta: 9h às 19h  
+                      Segunda a Sexta: 9h às 19h  
 
                       Sábado: 8h às 17h  
 
-                      Domingo e Segunda: Fechado
+                      Domingo: Fechado
                     </p>
                   </div>
                 </div>
@@ -312,21 +318,24 @@ Guarulhos, São Paulo</p>
             <div>
               <h3 className="text-2xl font-bold mb-6 text-yellow-500">Agende seu Horário</h3>
               <div className="space-y-4">
-                <Button 
-                  size="lg" 
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold"
+                <a 
+                  href="https://booksy.com/pt-br/270879_trend-blade-barbearia_barbearias_931546_guarulhos#ba_s=seo" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-black rounded-md transition-colors"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
                   Agendar pelo Booksy
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="w-full border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black"
+                </a>
+                <a 
+                  href="https://wa.me/5511951231443" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 text-lg font-semibold border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black rounded-md transition-colors"
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   WhatsApp
-                </Button>
+                </a>
               </div>
               <div className="mt-8 p-6 bg-black rounded-lg border border-yellow-500/20">
                 <h4 className="font-semibold mb-4 text-yellow-500">Por que escolher a Trend Blade?</h4>
@@ -347,7 +356,7 @@ Guarulhos, São Paulo</p>
       <footer className="bg-black border-t border-yellow-500/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" /> {/* Ajustado aqui */}
+            <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" />
             <span className="text-xl font-bold text-yellow-500">Trend Blade Barbearia</span>
           </div>
           <p className="text-gray-400">
@@ -356,7 +365,9 @@ Guarulhos, São Paulo</p>
         </div>
       </footer>
     </div>
-  )
+   )
 }
+
+export default App
 
 export default App

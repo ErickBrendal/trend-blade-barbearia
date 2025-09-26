@@ -368,4 +368,3 @@ Guarulhos, São Paulo</p>
    )
 }
 
-export default App

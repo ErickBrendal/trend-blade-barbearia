@@ -40,7 +40,8 @@ function App() {
     { icon: Car, text: 'Estacionamento' },
     { icon: Wifi, text: 'Wi-Fi Gratuito' },
     { icon: CreditCard, text: 'Cartão de Crédito' },
-    { icon: Heart, text: 'Programa Fidelidade' }    
+    { icon: Heart, text: 'Programa Fidelidade' },
+    { icon: PawPrint, text: 'Pet Friendly' }
   ]
 
   const scrollToSection = (sectionId) => {
@@ -70,7 +71,7 @@ function App() {
                     activeSection === section ? 'text-yellow-500' : 'text-white'
                   }`}
                 >
-                  {section === 'servicos' ? 'Serviços' : section === ?: section}
+                  {section === 'servicos' ? 'Serviços' : section}
                 </button>
               ))}
             </div>
@@ -218,42 +219,14 @@ function App() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section id="galeria" className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Nossa <span className="text-yellow-500">Galeria</span></h2>
-            <p className="text-xl text-gray-300">Confira nossos trabalhos e ambiente</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {galleryImages.map((image ) => (
-              <div key={image.id} className="relative group overflow-hidden rounded-lg bg-black border border-yellow-500/20 hover:border-yellow-500/50 transition-colors">
-                <img 
-                  src={image.src} 
-                  alt={image.alt}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <p className="text-white text-center px-4">{image.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-gray-400">Siga nosso Instagram para ver mais trabalhos: <span className="text-yellow-500">@trendbladebarbearia</span></p>
-          </div>
-        </div>
-      </section>
-
       {/* Amenities Section */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold mb-4">Comodidades &amp; <span className="text-yellow-500">Diferenciais</span></h3>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            {amenities.map((amenity, index) => (
+            {amenities.map((amenity, index ) => (
               <div key={index} className="flex items-center space-x-3 text-gray-300">
                 <amenity.icon className="h-6 w-6 text-yellow-500" />
                 <span>{amenity.text}</span>
@@ -264,7 +237,7 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="depoimentos" className="py-20 bg-gray-900">
+      <section id="depoimentos" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">O que nossos <span className="text-yellow-500">clientes</span> dizem</h2>
@@ -272,7 +245,7 @@ function App() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-black border-yellow-500/20">
+              <Card key={index} className="bg-gray-900 border-yellow-500/20">
                 <CardHeader>
                   <div className="flex items-center space-x-2 mb-2">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -291,7 +264,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contato" className="py-20 bg-black">
+      <section id="contato" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Entre em <span className="text-yellow-500">Contato</span></h2>
@@ -364,7 +337,7 @@ Guarulhos, São Paulo</p>
                   WhatsApp
                 </a>
               </div>
-              <div className="mt-8 p-6 bg-gray-900 rounded-lg border border-yellow-500/20">
+              <div className="mt-8 p-6 bg-black rounded-lg border border-yellow-500/20">
                 <h4 className="font-semibold mb-4 text-yellow-500">Por que escolher a Trend Blade?</h4>
                 <ul className="space-y-2 text-gray-300">
                   <li>✓ Profissionais especializados e dedicados</li>
@@ -380,7 +353,7 @@ Guarulhos, São Paulo</p>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-yellow-500/20 py-8">
+      <footer className="bg-black border-t border-yellow-500/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" />

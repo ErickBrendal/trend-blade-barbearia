@@ -40,18 +40,7 @@ function App() {
     { icon: Car, text: 'Estacionamento' },
     { icon: Wifi, text: 'Wi-Fi Gratuito' },
     { icon: CreditCard, text: 'Cartão de Crédito' },
-    { icon: Heart, text: 'Programa Fidelidade' },
-    { icon: PawPrint, text: 'Pet Friendly' }
-  ]
-
-  // Galeria de fotos - você pode adicionar suas fotos aqui
-  const galleryImages = [
-    { id: 1, src: logoImage, alt: 'Ambiente da barbearia', category: 'ambiente' },
-    { id: 2, src: logoImage, alt: 'Corte masculino premium', category: 'cortes' },
-    { id: 3, src: logoImage, alt: 'Barba bem feita', category: 'barba' },
-    { id: 4, src: logoImage, alt: 'Produtos de qualidade', category: 'produtos' },
-    { id: 5, src: logoImage, alt: 'Ambiente aconchegante', category: 'ambiente' },
-    { id: 6, src: logoImage, alt: 'Resultado final', category: 'cortes' }
+    { icon: Heart, text: 'Programa Fidelidade' }    
   ]
 
   const scrollToSection = (sectionId) => {
@@ -73,7 +62,7 @@ function App() {
               <span className="text-xl font-bold text-yellow-500">Trend Blade</span>
             </div>
             <div className="hidden md:flex space-x-6">
-              {['home', 'sobre', 'servicos', 'galeria', 'depoimentos', 'contato'].map((section) => (
+              {['home', 'sobre', 'servicos', 'depoimentos', 'contato'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -81,7 +70,7 @@ function App() {
                     activeSection === section ? 'text-yellow-500' : 'text-white'
                   }`}
                 >
-                  {section === 'servicos' ? 'Serviços' : section === 'galeria' ? 'Galeria' : section}
+                  {section === 'servicos' ? 'Serviços' : section === ?: section}
                 </button>
               ))}
             </div>

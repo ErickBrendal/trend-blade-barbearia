@@ -19,28 +19,15 @@ function App() {
   ]
 
   const testimonials = [
-    {
-      name: 'Carlos Silva',
-      rating: 5,
-      text: 'Atendimento impecável! O melhor corte que já fiz em Guarulhos.'
-    },
-    {
-      name: 'Roberto Santos',
-      rating: 5,
-      text: 'Ambiente aconchegante e profissional muito dedicado. Recomendo!'
-    },
-    {
-      name: 'André Costa',
-      rating: 5,
-      text: 'Profissional caprichoso e atencioso. Sempre saio satisfeito!'
-    }
+    { name: 'Carlos Silva', rating: 5, text: 'Atendimento impecável! O melhor corte que já fiz em Guarulhos.' },
+    { name: 'Roberto Santos', rating: 5, text: 'Ambiente aconchegante e profissional muito dedicado. Recomendo!' },
+    { name: 'André Costa', rating: 5, text: 'Profissional caprichoso e atencioso. Sempre saio satisfeito!' }
   ]
 
   const amenities = [
-const amenities = [
-  { icon: Wifi, text: 'Wi-Fi Gratuito' },
-  { icon: CreditCard, text: 'Cartão de Crédito' }
-]
+    { icon: Wifi, text: 'Wi-Fi Gratuito' },
+    { icon: CreditCard, text: 'Cartão de Crédito' }
+  ]
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId)
@@ -52,7 +39,6 @@ const amenities = [
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
       <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-yellow-500/20">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
@@ -77,7 +63,6 @@ const amenities = [
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section id="home" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-black via-gray-900 to-black">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -126,7 +111,6 @@ const amenities = [
         </div>
       </section>
 
-      {/* About Section */}
       <section id="sobre" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -163,7 +147,7 @@ const amenities = [
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-300">
-                    Estacionamento, Wi-Fi, cartão de crédito e um ambiente pet friendly para sua conveniência.
+                    Wi-Fi gratuito, cartão de crédito e um ambiente aconchegante para sua conveniência.
                   </p>
                 </CardContent>
               </Card>
@@ -172,7 +156,6 @@ const amenities = [
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="servicos" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -217,7 +200,6 @@ const amenities = [
         </div>
       </section>
 
-      {/* Amenities Section */}
       <section className="py-16 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -234,7 +216,6 @@ const amenities = [
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section id="depoimentos" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -261,7 +242,6 @@ const amenities = [
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contato" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -303,8 +283,10 @@ Guarulhos, São Paulo</p>
                   <div>
                     <h4 className="font-semibold">Horário de Funcionamento</h4>
                     <p className="text-gray-300">
-                      Terça a Sexta: 9h às 19h
-                      Sábado: 8h às 17h 
+                      Terça a Sexta: 9h às 19h  
+
+                      Sábado: 8h às 17h  
+
                       Segunda e Domingo: Fechado
                     </p>
                   </div>
@@ -348,7 +330,6 @@ Guarulhos, São Paulo</p>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-black border-t border-yellow-500/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
@@ -363,5 +344,3 @@ Guarulhos, São Paulo</p>
     </div>
    )
 }
-
-export default App

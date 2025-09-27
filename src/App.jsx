@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Star, MapPin, Clock, Phone, Instagram, Calendar, Wifi, CreditCard, Car, Heart, PawPrint } from 'lucide-react'
+import { Star, MapPin, Clock, Phone, Instagram, Calendar, Wifi, CreditCard } from 'lucide-react'
 import logoImage from './assets/IMG_7057.jpg'
 import './App.css'
 
@@ -37,12 +37,10 @@ function App() {
   ]
 
   const amenities = [
-    { icon: Car, text: 'Estacionamento' },
-    { icon: Wifi, text: 'Wi-Fi Gratuito' },
-    { icon: CreditCard, text: 'Cartão de Crédito' },
-    { icon: Heart, text: 'Programa Fidelidade' },
-    { icon: PawPrint, text: 'Pet Friendly' }
-  ]
+const amenities = [
+  { icon: Wifi, text: 'Wi-Fi Gratuito' },
+  { icon: CreditCard, text: 'Cartão de Crédito' }
+]
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId)
@@ -305,11 +303,9 @@ Guarulhos, São Paulo</p>
                   <div>
                     <h4 className="font-semibold">Horário de Funcionamento</h4>
                     <p className="text-gray-300">
-                      Segunda a Sexta: 9h às 19h  
-
-                      Sábado: 8h às 17h  
-
-                      Domingo: Fechado
+                      Terça a Sexta: 9h às 19h
+                      Sábado: 8h às 17h 
+                      Segunda e Domingo: Fechado
                     </p>
                   </div>
                 </div>

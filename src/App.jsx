@@ -43,8 +43,8 @@ function App() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
-              <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" />
-              <span className="text-xl font-bold text-yellow-500">Trend Blade</span>
+              <img src={logoImage} alt="Vibrum Co. Logo" className="h-10 w-auto" />
+              <span className="text-xl font-bold text-yellow-500">Vibrum Co.</span>
             </div>
             <div className="hidden md:flex space-x-6">
               {['home', 'sobre', 'servicos', 'depoimentos', 'contato'].map((section) => (
@@ -104,7 +104,7 @@ function App() {
             </div>
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-yellow-500/20 to-transparent border-2 border-yellow-500/30 flex items-center justify-center">
-                <img src={logoImage} alt="Trend Blade Logo" className="w-72 h-72 object-cover rounded-full" />
+                <img src={logoImage} alt="Vibrum Co. Logo" className="w-72 h-72 object-cover rounded-full" />
               </div>
             </div>
           </div>
@@ -114,9 +114,9 @@ function App() {
       <section id="sobre" className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8">Sobre a <span className="text-yellow-500">Trend Blade</span></h2>
+            <h2 className="text-4xl font-bold mb-8">Sobre a <span className="text-yellow-500">Vibrum Co.</span></h2>
             <p className="text-xl text-gray-300 mb-12 leading-relaxed">
-              Localizada no coração de Guarulhos, a Trend Blade Barbearia nasceu da paixão por transformar 
+              Localizada no coração de Guarulhos, a Vibrum Co. nasceu da paixão por transformar e inovar, oferecendo um complexo de serviços de elite. 
               o cuidado masculino em uma experiência única. Combinamos técnicas tradicionais com tendências 
               modernas, criando um ambiente onde estilo, conforto e qualidade se encontram.
             </p>
@@ -188,7 +188,7 @@ function App() {
           <div className="text-center mt-12">
             <p className="text-gray-400 mb-6">Agende seu horário pelo Booksy ou WhatsApp</p>
             <a 
-              href="https://booksy.com/pt-br/270879_trend-blade-barbearia_barbearias_931546_guarulhos#ba_s=seo" 
+              href="https://vibrumco.com/agendamento" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-black rounded-md transition-colors"
@@ -275,7 +275,7 @@ Guarulhos, São Paulo</p>
                   <Instagram className="h-6 w-6 text-yellow-500 mt-1" />
                   <div>
                     <h4 className="font-semibold">Instagram</h4>
-                    <p className="text-gray-300">@trendbladebarbearia</p>
+                    <p className="text-gray-300">@vibrumco</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -297,7 +297,7 @@ Guarulhos, São Paulo</p>
               <h3 className="text-2xl font-bold mb-6 text-yellow-500">Agende seu Horário</h3>
               <div className="space-y-4">
                 <a 
-                  href="https://booksy.com/pt-br/270879_trend-blade-barbearia_barbearias_931546_guarulhos#ba_s=seo" 
+                  href="https://vibrumco.com/agendamento" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-black rounded-md transition-colors"
@@ -316,7 +316,7 @@ Guarulhos, São Paulo</p>
                 </a>
               </div>
               <div className="mt-8 p-6 bg-black rounded-lg border border-yellow-500/20">
-                <h4 className="font-semibold mb-4 text-yellow-500">Por que escolher a Trend Blade?</h4>
+                <h4 className="font-semibold mb-4 text-yellow-500">Por que escolher a Vibrum Co.?</h4>
                 <ul className="space-y-2 text-gray-300">
                   <li>✓ Profissionais especializados e dedicados</li>
                   <li>✓ Ambiente aconchegante e sofisticado</li>
@@ -333,11 +333,11 @@ Guarulhos, São Paulo</p>
       <footer className="bg-black border-t border-yellow-500/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <img src={logoImage} alt="Trend Blade Logo" className="h-10 w-auto" />
-            <span className="text-xl font-bold text-yellow-500">Trend Blade Barbearia</span>
+            <img src={logoImage} alt="Vibrum Co. Logo" className="h-10 w-auto" />
+            <span className="text-xl font-bold text-yellow-500">Vibrum Co.</span>
           </div>
           <p className="text-gray-400">
-            © 2024 Trend Blade Barbearia. Estilo e sofisticação em Guarulhos.
+            © 2024 Vibrum Co. Tecnologia, Estilo e Serviços de Elite em Guarulhos.
           </p>
         </div>
       </footer>

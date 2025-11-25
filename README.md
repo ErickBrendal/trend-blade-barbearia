@@ -1,6 +1,6 @@
-# Trend Blade Barbearia - Site Oficial
+# Vibrum Co. - Site Oficial
 
-Este é o site oficial da Trend Blade Barbearia, desenvolvido para apresentar os serviços, comodidades e informações de contato de forma elegante e moderna. O projeto foi construído utilizando React, Tailwind CSS e Shadcn/ui, garantindo responsividade e uma experiência de usuário otimizada em diferentes dispositivos.
+Este é o site oficial da Vibrum Co., desenvolvido para apresentar os serviços, comodidades e informações de contato de forma elegante e moderna. O projeto foi construído utilizando React, Tailwind CSS e Shadcn/ui, garantindo responsividade e uma experiência de usuário otimizada em diferentes dispositivos.
 
 ## Funcionalidades
 
@@ -42,7 +42,7 @@ Para configurar e rodar o projeto em seu ambiente de desenvolvimento local, siga
 1. **Clone o repositório:**
    ```bash
    git clone [URL_DO_SEU_REPOSITORIO]
-   cd trend-blade-barbearia
+   cd vibrum-co
    ```
 
 2. **Instale as dependências:**

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Star, MapPin, Clock, Phone, Instagram, Calendar, Wifi, CreditCard } from 'lucide-react'
+import { Star, MapPin, Clock, Phone, Instagram, Calendar, Wifi, CreditCard, Mail } from 'lucide-react'
 import logoImage from './assets/logo.png'
 import './App.css'
 
@@ -186,15 +186,15 @@ function App() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <p className="text-gray-400 mb-6">Agende seu horário pelo Booksy ou WhatsApp</p>
+            <p className="text-gray-400 mb-6">Entre em contato para agendamento por WhatsApp ou E-mail</p>
             <a 
-              href="https://vibrumco.com/agendamento" 
+              href="https://wa.me/5511974455563?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20corte" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-black rounded-md transition-colors"
             >
-              <Calendar className="mr-2 h-5 w-5" />
-              Agendar Agora
+              <Phone className="mr-2 h-5 w-5" />
+              Agendar via WhatsApp
             </a>
           </div>
         </div>
@@ -265,8 +265,8 @@ Guarulhos, São Paulo</p>
                   <div>
                     <h4 className="font-semibold">WhatsApp</h4>
                     <p className="text-gray-300">
-                      <a href="https://wa.me/5511951231443" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition-colors">
-                        (11 ) 95123-1443
+                      <a href="https://wa.me/5511974455563?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20corte" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition-colors">
+                        (11) 97445-5563
                       </a>
                     </p>
                   </div>
@@ -297,22 +297,22 @@ Guarulhos, São Paulo</p>
               <h3 className="text-2xl font-bold mb-6 text-yellow-500">Agende seu Horário</h3>
               <div className="space-y-4">
                 <a 
-                  href="https://vibrumco.com/agendamento" 
+                  href="https://wa.me/5511974455563?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20corte" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-lg font-semibold bg-yellow-500 hover:bg-yellow-600 text-black rounded-md transition-colors"
                 >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Agendar pelo Booksy
+                  <Phone className="mr-2 h-5 w-5" />
+                  Agendar via WhatsApp
                 </a>
                 <a 
-                  href="https://wa.me/5511951231443" 
+                  href="mailto:admebl@eblsolucoescorporativas.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-6 py-3 text-lg font-semibold border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black rounded-md transition-colors"
                 >
-                  <Phone className="mr-2 h-5 w-5" />
-                  WhatsApp
+                  <Mail className="mr-2 h-5 w-5" />
+                  Enviar E-mail
                 </a>
               </div>
               <div className="mt-8 p-6 bg-black rounded-lg border border-yellow-500/20">
